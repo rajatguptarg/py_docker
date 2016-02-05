@@ -1,0 +1,15 @@
+include MANIFEST
+include LICENSE
+include *.txt
+include *.md
+include *.py
+include tox.ini
+recursive-include beacons *.py
+recursive-include beacons *.css
+recursive-include beacons *.jinja
+recursive-include beacons *.js
+
+global-exclude *.swp
+recursive-exclude beacons *.pyc
+prune config
+prune tests
